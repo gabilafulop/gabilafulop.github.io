@@ -1,0 +1,107 @@
+:root{
+--bg:#fbfbf8;--ink:#1d2828;--muted:#707977;--line:#e3e6e1;--soft:#eef1ed;--accent:#dce7df;--max:1160px
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.header{height:76px;max-width:var(--max);margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;background:#fbfbf8eF;backdrop-filter:blur(10px)}
+.brand{font-size:24px;font-weight:600;letter-spacing:-2px}.brand span{color:#91a399}
+.nav{display:flex;gap:27px}.nav a{font-size:9px;text-transform:uppercase;letter-spacing:1.3px;color:#697370;font-weight:700}.nav a:hover{color:var(--ink)}
+.small-btn,.dark-btn{display:inline-flex;align-items:center;gap:15px;background:var(--ink);color:white;border-radius:6px;padding:10px 14px;font-size:8px;letter-spacing:1.1px;text-transform:uppercase;font-weight:700;transition:.2s}
+.small-btn:hover,.dark-btn:hover{transform:translateY(-2px)}
+.menu{display:none;border:0;background:none;font-size:20px}
+.eyebrow{font-size:8px;letter-spacing:2.4px;color:#77807d;font-weight:700}
+.line-link{font-size:9px;text-transform:uppercase;letter-spacing:1.3px;font-weight:700;border-bottom:1px solid #9da5a1;padding-bottom:3px}.line-link:hover{border-color:var(--ink)}
+.hero{max-width:var(--max);margin:auto;min-height:700px;padding:70px 24px 65px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}
+.hero h1{font:500 clamp(52px,6.5vw,84px)/1.02 "Playfair Display";letter-spacing:-3.2px;margin:21px 0 27px}
+.hero h1 em{font-style:italic;color:#66766d}
+.hero-lead{max-width:620px;font-size:16px;color:#69736f;margin-bottom:28px}
+.hero-actions{display:flex;align-items:center;gap:25px}.hero-bottom{display:flex;gap:35px;margin-top:75px;font-size:8px;letter-spacing:1.6px;color:#8c9591}
+.portrait-wrap{height:555px;display:flex;align-items:flex-end;justify-content:center;position:relative}
+.portrait-wrap:after{content:"";position:absolute;bottom:18px;left:13%;right:13%;height:1px;background:var(--line)}
+.portrait-wrap img{height:100%;max-width:100%;object-fit:contain;object-position:center bottom;position:relative;z-index:1}
+.portrait-caption{position:absolute;bottom:0;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:7px;letter-spacing:1.8px;color:#9ba39f;z-index:2}
+
+.section{max-width:var(--max);margin:auto;padding:105px 24px;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:48px 1fr;gap:20px;margin-bottom:50px}
+.number{font-size:9px;color:#a4aca8;padding-top:5px}
+.section h2{font:500 clamp(43px,5vw,64px)/1.04 "Playfair Display";letter-spacing:-2.4px;margin-top:15px}
+.section h2 em{font-style:italic;color:#66766d}
+.trajectory-intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;margin:0 0 55px 68px}
+.trajectory-intro p{font-size:14px;color:var(--muted);max-width:500px}
+.timeline{margin-left:68px;border-top:1px solid var(--line)}
+.timeline article{display:grid;grid-template-columns:58px 1fr;gap:25px;padding:30px 0;border-bottom:1px solid var(--line)}
+.timeline-index{font:500 18px "Playfair Display";color:#a7afab}
+.timeline-role>span{font-size:8px;letter-spacing:1.5px;color:#89928e}
+.timeline h3{font-size:22px;font-weight:600;margin:7px 0 8px}.timeline p{font-size:13px;color:var(--muted);max-width:790px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.tags span,.chips span{font-size:7px;letter-spacing:.7px;background:var(--soft);padding:5px 8px;color:#6d7772}
+.current-step{background:#edf2ee;margin-left:-12px;margin-right:-12px;padding-left:12px!important;padding-right:12px!important}
+
+.now{padding-top:120px}.now-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:100px;align-items:start;margin-left:68px}
+.now-main .lead{font:500 25px/1.45 "Playfair Display";color:#36403e;margin-bottom:22px;max-width:700px}
+.now-main p:not(.lead){font-size:14px;color:var(--muted);max-width:700px;margin-top:16px}
+.now-card{background:#e8efe9;padding:31px;min-height:310px}.card-top{display:flex;justify-content:space-between;font-size:8px;letter-spacing:1.5px;color:#74807a}.now-card h3{font:500 31px/1.1 "Playfair Display";margin:42px 0 13px}.now-card>p{font-size:12px;color:#707a75;margin-bottom:24px}.chips{display:flex;gap:6px;flex-wrap:wrap}
+.capabilities{margin:75px 0 0 68px;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
+.capabilities div{padding:17px 18px 17px 0;border-bottom:1px solid var(--line);display:flex;gap:13px}.capabilities b{font-size:8px;color:#a0a8a4}.capabilities span{font-size:11px;font-weight:600}
+
+.perspective-flow{margin-left:68px;display:grid;grid-template-columns:1fr 25px 1fr 25px 1fr 25px 1fr;gap:12px;align-items:center}.perspective-flow>div:not(.arrow){padding:22px 18px;border-top:2px solid #cbd2ce}.perspective-flow span{font-size:8px;letter-spacing:1.5px;color:#7d8682;font-weight:700}.perspective-flow p{font-size:11px;color:var(--muted);margin-top:10px}.perspective-flow .highlight{background:var(--accent);border-top-color:#98a99f}.arrow{color:#a3aaa7;text-align:center}
+
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-left:68px}.project-grid article{min-height:275px;background:#fff;border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.project-grid article:hover{transform:translateY(-3px);box-shadow:0 15px 35px #1822290b}.project-grid article>span{font-size:8px;letter-spacing:1.5px;color:#8b9490}.project-grid h3{font:500 30px "Playfair Display";margin:15px 0 10px}.project-grid p{font-size:12px;color:var(--muted)}.project-grid .tags{margin-top:18px}
+
+.mov-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:100px;margin-left:68px;align-items:center}.mov-grid p{font-size:14px;color:var(--muted);max-width:700px;margin-bottom:20px}.mov-side{border-left:1px solid var(--line);padding:22px 0 22px 30px}.mov-side span{display:block;font-size:8px;letter-spacing:1.6px;color:#929a96}.mov-side strong{display:block;font:500 30px/1.1 "Playfair Display";margin-top:7px}
+
+.education-list{margin-left:68px;border-top:1px solid var(--line)}.education-list>div{display:grid;grid-template-columns:145px 1fr;gap:30px;padding:22px 0;border-bottom:1px solid var(--line)}.education-list>div>span{font-size:8px;letter-spacing:1.4px;color:#8b9490;padding-top:4px}.education-list h3{font-size:16px}.education-list p{font-size:11px;color:var(--muted);margin-top:3px}.education-list .current{background:#edf2ee;padding-left:15px;padding-right:15px}
+
+.human-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:100px;margin-left:68px}.human-grid .lead{font:500 23px/1.45 "Playfair Display";margin-bottom:20px}.human-grid p:not(.lead){font-size:13px;color:var(--muted);max-width:680px}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;align-self:end}.facts div{border-top:1px solid var(--line);padding-top:12px}.facts b{display:block;font:500 31px "Playfair Display";color:#65736c}.facts span{font-size:9px;color:#7f8884}
+
+.doc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-left:68px}.doc-grid a{min-height:225px;background:#fff;border:1px solid var(--line);padding:27px;display:flex;flex-direction:column;justify-content:space-between;transition:.2s}.doc-grid a:hover{transform:translateY(-3px)}.doc-grid span{font-size:8px;letter-spacing:1.5px;color:#8d9692}.doc-grid h3{font:500 26px "Playfair Display";margin:15px 0 5px}.doc-grid p{font-size:11px;color:var(--muted)}.doc-grid strong{font-size:8px;letter-spacing:1.2px}
+
+.contact{max-width:var(--max);margin:auto;padding:115px 24px 130px;border-top:1px solid var(--line);text-align:left}.contact h2{font:500 clamp(54px,7vw,85px)/.98 "Playfair Display";letter-spacing:-3px;margin:18px 0}.contact h2 em{font-style:italic;color:#66766d}.contact>p:not(.eyebrow){font-size:13px;color:var(--muted);margin-bottom:27px}.contact-actions{display:flex;align-items:center;gap:25px}
+footer{max-width:var(--max);margin:auto;border-top:1px solid var(--line);padding:25px 24px 35px;display:flex;justify-content:space-between;font-size:8px;letter-spacing:1px;color:#8b9490}
+
+@media(max-width:900px){
+.nav{display:none}.menu{display:block}.small-btn{display:none}.header{height:68px}.nav.open{display:flex;position:absolute;top:68px;left:0;right:0;background:var(--bg);padding:18px 24px;flex-direction:column;gap:14px;border-bottom:1px solid var(--line)}
+.hero{grid-template-columns:1fr;min-height:auto;padding-top:55px}.portrait-wrap{height:430px;margin-top:15px}.trajectory-intro,.now-grid,.mov-grid,.human-grid{grid-template-columns:1fr;gap:40px}.perspective-flow{grid-template-columns:1fr;gap:9px}.perspective-flow .arrow{display:none}.project-grid,.doc-grid{grid-template-columns:1fr}.capabilities{grid-template-columns:1fr 1fr}.now-grid,.trajectory-intro,.timeline,.capabilities,.project-grid,.mov-grid,.education-list,.human-grid,.doc-grid,.perspective-flow{margin-left:0}.section-head{grid-template-columns:35px 1fr}}
+@media(max-width:560px){
+.hero{padding-left:18px;padding-right:18px}.hero h1{font-size:48px}.hero-bottom{flex-direction:column;gap:8px;margin-top:45px}.portrait-wrap{height:370px}.section{padding:80px 18px}.section h2{font-size:43px}.timeline article{grid-template-columns:35px 1fr;gap:12px}.timeline h3{font-size:19px}.capabilities{grid-template-columns:1fr}.facts{grid-template-columns:1fr 1fr 1fr}.contact{padding-left:18px;padding-right:18px}.contact h2{font-size:53px}footer{margin:0 18px;flex-direction:column;gap:8px;padding-left:0;padding-right:0}}
+
+
+/* Proyectos personales: automatización + Movtastic */
+.automation-project{margin-left:68px;background:#e8efe9;border:1px solid #d8e0da;padding:34px;display:grid;grid-template-columns:1fr;gap:25px}
+.automation-copy>span,.project-label{font-size:8px;letter-spacing:1.5px;color:#78837d;font-weight:700}
+.automation-copy h3{font:500 clamp(31px,4vw,48px)/1.04 "Playfair Display";letter-spacing:-1.5px;margin:13px 0 12px}
+.automation-copy>p{font-size:13px;color:#5f6965;max-width:790px}
+.flow-tags{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:18px 0 8px}
+.flow-tags span{font-size:8px;letter-spacing:.7px;background:#fbfbf8;border:1px solid #d8e0da;padding:6px 8px;color:#65716b}
+.flow-tags b{font-size:10px;color:#89958e}
+.automation-project .tags{margin-top:12px}
+.video-frame{width:100%;max-width:920px;margin:0 auto;background:#111;border-radius:6px;overflow:hidden;box-shadow:0 15px 35px #18222912}
+.video-frame video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#111}
+.video-caption{display:flex;justify-content:space-between;gap:15px;padding:11px 13px;background:#111;color:#aeb7b2;font-size:7px;letter-spacing:1.2px}
+.movtastic-card{margin:14px 0 0 68px;background:#fff;border:1px solid var(--line);padding:0}
+.movtastic-card .mov-grid{margin-left:0;padding:34px;gap:80px}
+.movtastic-card h3{font:500 clamp(30px,4vw,45px)/1.05 "Playfair Display";letter-spacing:-1.3px;margin:13px 0 14px}
+.movtastic-card .mov-grid p{font-size:13px;color:var(--muted);max-width:700px;margin-bottom:20px}
+@media(max-width:900px){.automation-project,.movtastic-card{margin-left:0}.automation-project{padding:26px}.movtastic-card .mov-grid{padding:26px}.movtastic-card .mov-grid{grid-template-columns:1fr;gap:40px}}
+@media(max-width:560px){.automation-project{padding:20px}.automation-copy h3,.movtastic-card h3{font-size:34px}.flow-tags b{display:none}.video-caption{flex-direction:column;gap:6px}.movtastic-card .mov-grid{padding:20px}}
+
+/* Personal projects — compact clickable cards */
+.personal-project-grid{margin-left:68px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.personal-project-card{min-height:390px;background:#fff;border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;justify-content:space-between;transition:.22s ease;position:relative;overflow:hidden}
+.personal-project-card:hover{transform:translateY(-4px);box-shadow:0 18px 38px #1822290b}
+.personal-project-card:focus-visible{outline:2px solid #91a399;outline-offset:3px}
+.personal-card-top{display:flex;justify-content:space-between;gap:18px;font-size:8px;letter-spacing:1.5px;color:#8b9490}
+.open-project{font-weight:700;color:#5f6b66}
+.personal-project-card h3{font:500 31px/1.1 "Playfair Display";letter-spacing:-.7px;margin:35px 0 14px}
+.personal-project-card h3 em{font-style:italic;color:#66766d}
+.personal-project-card p{font-size:12px;color:var(--muted);max-width:560px}
+.personal-project-card .tags{margin-top:18px}
+.flow-tags{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:25px}
+.flow-tags span{font-size:7px;letter-spacing:.6px;background:var(--soft);padding:5px 7px;color:#6d7772}
+.flow-tags b{font-size:9px;color:#a1a9a5;font-weight:500}
+.mov-project-footer{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.mov-project-footer .tags{margin-top:0}
+.mov-project-footer strong{font-size:8px;letter-spacing:1.1px;text-transform:uppercase;color:#65716b;white-space:nowrap}
+@media(max-width:900px){.personal-project-grid{grid-template-columns:1fr;margin-left:0}.personal-project-card{min-height:340px}}
+@media(max-width:560px){.personal-project-card{padding:24px;min-height:330px}.personal-project-card h3{font-size:27px}.personal-card-top{font-size:7px}.mov-project-footer{align-items:flex-start;flex-direction:column;gap:12px}}
